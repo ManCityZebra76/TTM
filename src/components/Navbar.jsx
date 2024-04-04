@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
+import {FaBars, FaTimes, FaLinkedin, FaInstagram} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import Logo from '../assests/greyTmtLogo.svg'
@@ -29,13 +29,8 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li className='mx4'>
-                    <Link to="skills" smooth={true} duration={500}>
-                        Skills
-                    </Link>
-                </li>
-                <li className='mx4'>
-                    <Link to="work" smooth={true} duration={500}>
-                        Work
+                    <Link to="players" smooth={true} duration={500}>
+                        Players
                     </Link>
                 </li>
                 <li className='mx4'>
@@ -61,12 +56,8 @@ const Navbar = () => {
                         About
                     </Link>
             </li>
-            <li className='py-6 text-4xl'><Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-                        Skills
-                    </Link>
-            </li>
-            <li className='py-6 text-4xl'><Link onClick={handleClick} to="work" smooth={true} duration={500}>
-                        Work
+            <li className='py-6 text-4xl'><Link onClick={handleClick} to="players" smooth={true} duration={500}>
+                        Players
                     </Link>
             </li>
             <li className='py-6 text-4xl'><Link onClick={handleClick} to="contact" smooth={true} duration={500}>
@@ -76,30 +67,30 @@ const Navbar = () => {
         </ul>
 
         {/* Social icons */}
-        <div className='fixed flex-col top-[35%] left-0'>
+        <div className='fixed flex-col top-[35%] right-0'>
     <ul>
-        <li className='w-[80px] lg:w-[160px] h-[40px] lg:h-60px flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
+        <li className='w-[80px] lg:w-[160px] h-[40px] lg:h-60px flex justify-between items-center mr-[-100px] hover:mr-[-10px] duration-300 bg-blue-600'>
             <a className='flex justify-between items-center w-full text-gray-300'
-            href="https://www.linkedin.com/in/gavin-white-40280a20a/">
-                Linkedin <FaLinkedin size={30} className='mr-[-10px] lg:mr-0 duration-300'/>
+            href="https://www.linkedin.com/in/john-seliskar/">
+                <FaLinkedin size={30} className='ml-[-10px] lg:ml-0 duration-300'/> Linkedin 
             </a>
         </li>
-        <li className='w-[80px] lg:w-[160px] h-[40px] lg:h-60px flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+        <li className='w-[80px] lg:w-[160px] h-[40px] lg:h-60px flex justify-between items-center mr-[-100px] hover:mr-[-10px] duration-300 instagram'>
             <a className='flex justify-between items-center w-full text-gray-300'
-            href="https://github.com/gavinwhite03">
-                GitHub <FaGithub size={30} className='mr-[-10px] lg:mr-0 duration-300'/>
+            href="https://www.instagram.com/tirelesstalentmanagement/">
+               <FaInstagram size={30} className='ml-[-10px] lg:ml-0 duration-300'/> Instagram 
             </a>
         </li>
-        <li className='w-[80px] lg:w-[160px] h-[40px] lg:h-60px flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#70c26f]'>
+        <li className='w-[80px] lg:w-[160px] h-[40px] lg:h-60px flex justify-between items-center mr-[-100px] hover:mr-[-10px] duration-300 bg-[#70c26f]'>
             <a className='flex justify-between items-center w-full text-gray-300'
-            href="mailto: gavin0314@gmail.com">
-                Email <HiOutlineMail size={30} className='mr-[-10px] lg:mr-0 duration-300'/>
+            href="mailto: johnw.seliskar@gmail.com">
+                <HiOutlineMail size={30} className='ml-[-10px] lg:ml-0 duration-300'/> Email 
             </a>
         </li>
-        <li className='w-[80px] lg:w-[160px] h-[40px] lg:h-60px flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
+        <li className='w-[80px] lg:w-[160px] h-[40px] lg:h-60px flex justify-between items-center mr-[-100px] hover:mr-[-10px] duration-300 bg-[#565f69]'>
             <a className='flex justify-between items-center w-full text-gray-300'
             href="https://publuu.com/flip-book/393551/891931">
-                Resume <BsFillPersonLinesFill size={30} className='mr-[-10px] lg:mr-0 duration-300'/>
+               <BsFillPersonLinesFill size={30} className='ml-[-10px] lg:ml-0 duration-300'/> Resume 
             </a>
         </li>
     </ul>

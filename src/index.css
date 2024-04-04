@@ -16,15 +16,16 @@
 
 .content-div {
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    height: 360px;
+    background-color: #0c0c0c;
+    height: 1000px;
+}
+.container:hover button,
+.container:hover img + a button,
+.container:hover p {
+  opacity: 1;
 }
 
-.content-div:hover {
-    background-image: linear-gradient(
-        to right,
-        rgba(112, 157, 255, 0.8),
-        hsla(242, 74%, 61%, 0.8)
-    ) !important;
+.instagram {
+  background: radial-gradient(circle at 10% 107%, #fdf497 0%, #fdf497 5%, #fd5949 25%,#d6249f 50%,#285AEB 70%);
 }
