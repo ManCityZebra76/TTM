@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import {FaBars, FaX, FaLinkedin, FaInstagram} from 'react-icons/fa6'
-import {HiOutlineEnvelope} from 'react-icons/hi2'
+import {FaBars, FaTimes, FaLinkedin, FaInstagram} from 'react-icons/fa'
+import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import Logo from '../assests/greyTmtLogo.svg'
 import {Link} from 'react-scroll'
@@ -43,7 +43,7 @@ const Navbar = () => {
 
         {/* Hamburger */}
         <div onClick={handleClick} className='md:hidden z-10 absolute top-4 right-0 mt-4 mr-4'>
-            {!nav ? <FaBars /> : <FaX />}
+            {!nav ? <FaBars /> : <FaTimes />}
         </div>
 
         {/* Mobile Menu */}
@@ -84,7 +84,7 @@ const Navbar = () => {
         <li className='w-[80px] lg:w-[160px] h-[40px] lg:h-60px flex justify-between items-center mr-[-100px] hover:mr-[-10px] duration-300 bg-[#70c26f]'>
             <a className='flex justify-between items-center w-full text-gray-300'
             href="mailto: johnw.seliskar@gmail.com">
-                <HiOutlineEnvelope size={30} className='ml-[-10px] lg:ml-0 duration-300'/> Email 
+                <HiOutlineMail size={30} className='ml-[-10px] lg:ml-0 duration-300'/> Email 
             </a>
         </li>
         <li className='w-[80px] lg:w-[160px] h-[40px] lg:h-60px flex justify-between items-center mr-[-100px] hover:mr-[-10px] duration-300 bg-[#565f69]'>
